@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+
+    background-color: rgb(39, 37, 37);
+}
+
+
+    .main-wrapper {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .calculator-wrapper {
+            padding: 2rem;
+            min-width: 19%;
+            
+            
+
+            background-color: black;
+            border-radius: 2rem;
+        }
+
+            .button-class, .button-class-O {
+                height: 5rem;
+                width: 4.5rem;
+                border-radius: 4.7rem;
+                border: none;
+                margin: 0.2rem 0.2rem;
+                font-size: 3rem;
+                transition: color 0.2s;
+            }
+
+                .button-class:hover, .resetButton-field:hover {
+                    color: rgb(214, 188, 41);
+                }
+
+                .button-class-O {
+                    background-color: orange;
+                }
+
+                    .button-class-O:hover {
+                        color: white;
+                    }
+
+            .resetButton-field {
+                margin-top: 0.5rem;
+                height: 4rem;
+                width: 10rem;
+                border-radius: 4.7rem;
+                border: none;
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                transition: color 0.2s;
+            }
+
+        .result-wrapper {
+            margin-top: 0.5rem;
+            font-size: 2rem;
+            min-width: 19%;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0rem 0rem 2rem 1rem;
+
+            display: flex;
+
+            color: white;
+            background-color: black;
+            border-radius: 2rem;
+        }
+
+
+            .paragraph {
+                font-size: 4rem;
+                max-width: 300px;
+                overflow: none;
+                word-break: break-word;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .is-clicked {
+                background-color: black;
+                color: white;
+            }
+
+
+
+
+/* MEDIA QUERY DEO */
+
+@media only screen and (max-width: 600px){
+    .result-wrapper {
+        min-width: 21rem;
+        max-width: 89%;
+    }
+
+    .calculator-wrapper {
+        max-height: 29.297rem;
+    }
+
+        .button-class {
+            height: 4rem;
+            width: 4rem;
+        }
+
+}
+
