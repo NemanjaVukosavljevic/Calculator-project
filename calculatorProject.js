@@ -84,13 +84,6 @@ document.getElementById("resetButton-id").onclick = function () {
 
 document.getElementById("resultField").innerHTML = `${result}`;
 
-// STORAGE FIELD POLJE
-
-// if(result === ''){
-//     document.getElementById("localStorage-field-id").innerHTML = `No calculations saved from previous session!`;
-// } else {
-//     document.getElementById("localStorage-field-id").innerHTML = `Saved calculation from previous session is: ${result}`;
-// }
 
 
 
